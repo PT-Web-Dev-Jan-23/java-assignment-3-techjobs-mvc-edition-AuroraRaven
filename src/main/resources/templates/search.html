@@ -36,6 +36,29 @@
 
     <hr />
 
+    <table class="job-listing">
+        <thead>
+        <tr>
+            <th>ID</th>
+            <th>Job Name</th>
+            <th>Employer</th>
+            <th>Location</th>
+            <th>Position Type</th>
+            <th>Core Competency</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr th:each="job:${jobs}">
+            <td th:text="${job.getId}"></td>
+            <td th:text="${job.getName}"></td>
+            <td th:text="${job.getEmployer}"></td>
+            <td th:text="${job.getLocation}"></td>
+            <td th:text="${job.getPositionType}"></td>
+            <td th:text="${job.getCoreCompetency}"></td>
+        </tr>
+        </tbody>
+    </table>
+
     <!-- TODO #4 - Loop over the search results to display all job fields. -->
 
 </div>
