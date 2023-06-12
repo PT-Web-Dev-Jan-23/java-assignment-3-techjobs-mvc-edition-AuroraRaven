@@ -1,4 +1,4 @@
-﻿package org.launchcode.techjobs.mvc;
+package org.launchcode.techjobs.mvc;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
